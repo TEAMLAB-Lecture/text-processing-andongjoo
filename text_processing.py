@@ -35,7 +35,7 @@ def normalize(input_string):
     """
     normalized_string = ""
     for i in input_string:
-        if i.isalpha() or " ":
+        if i.isalpha() or i==" " or i.isdigit():
             normalized_string+=i
     normalized_string=' '.join(normalized_string.split())
     
