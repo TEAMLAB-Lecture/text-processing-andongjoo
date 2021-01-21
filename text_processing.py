@@ -34,12 +34,11 @@ def normalize(input_string):
              'extra space'
     """
     normalized_string = ""
-    for i in input_string:
-        if i.isalpha() or i==" " or i.isdigit():
-            normalized_string+=i
-    normalized_string=' '.join(normalized_string.split())
+    for i in input_string.split():
+        normalized_string += i.lower() + " "
     
-    return normalized_string.lower()
+    
+    return normalized_string[:-1]
 
 
 def no_vowels(input_string):
