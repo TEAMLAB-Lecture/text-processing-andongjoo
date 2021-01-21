@@ -63,8 +63,11 @@ def no_vowels(input_string):
             >>> tp.normalize(input_string2)
             ''W lv Pythn!'
     """
+    alpabet = ["a","e","i","o","u"]
     no_vowel_string = ""
     for i in input_string:
-        if i != "a" and i !=  "e" and i !=  "i" and i !=  "o" and i !=  "u":
+        if i.lower() in alpabet:
+            pass
+        else:
             no_vowel_string+=i
     return no_vowel_string
